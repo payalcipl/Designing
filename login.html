@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Dashboard | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <!-- Css For Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CMaterial+Icons">
+     <!-- Css For bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+     <!-- Css For login,signup, Fpass -->
+    <link rel="stylesheet" href="css/pages.css">
+     <!-- Css For Font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
+<body class="body-bg">
+    <div class="container d-flex justify-content-center">
+        <div class="pages-form">
+            <div class="row form__outer white-bg">
+                <div class="col-md-6 drak-bg py-5">
+                    <div class="col-12">
+                        <h1 class="mb-2 mb-xl-5">LOGIN</h1>
+                        <div class="logo mb-4 mt-5">
+                            <img src="img/outer_logo.png" alt="">
+                        </div>
+                        <p class="mb-0">
+                            TapInSolutions (TiS) is a software solutions service for businesses wanting to build customer generation and retention, compile data and engage customers to promote, authenticate and track their products and services. TiS’s customized Near-Field-Communication (NFC) and Text-to-Land (T2L) software solutions will help businesses instantly connect and engage consumers with their brands and services right on the client’s own smartphone, without the client ever having to go to the trouble of configuring a connection.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 py-3  form_inner">
+                    <div class="col-12 text-center my-3">
+                        <img src="img/blank_thumb.png" width="80" alt="">
+                    </div>
+                    <div class="form-container login">
+                        <form name="login" action="accounts.html" method="post" novalidate="novalidate">
+                            <div class="form-group bmd-form-group">
+                                <label class="bmd-label-floating">Enter Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email">
+                            </div>
+                            <div class="form-group bmd-form-group">
+                                <label class="bmd-label-floating">Enter Your Password</label>
+                                <input type="password" class="form-control" name="password" id="password">
+                                <span class="forgot-pass"><a href="forgot-password.html">Forgot?</a></span>
+                            </div>
+                            <div class="form-group bmd-form-group is-filled">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="submit" value="Login" class="btn btn-raised btn-primary btn-block">
+                            <div class="form-group text-center pt-4 mb-0">
+                                <p class="text-muted">Don't have an account? <a href="signup.html">Sign Up</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+          <!-- Js for jquery -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap-material-design.js"></script>
+    <!-- Js for validate -->
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- Js for custom js -->
+    <script src="js/custom.js"></script>
+    <script>
+    $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
+    </script>
+</body>
+
+</html>

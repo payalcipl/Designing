@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Dashboard | Home</title>
+
+     <!-- Css For Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CMaterial+Icons">
+     <!-- Css For Mootstrap material -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+     <!-- Css For Full page styling  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Css For Fonts -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Css for Sidebar Scrollbar -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+</head>
+
+<body style="padding-top: 37px;">
+    <!-- Alert -->
+    <div class="alert custom-alert alert-dismissible fade show" role="alert">
+        <p class="mb-0">We need your permission to show notifications. <a href="#" class="mx-3">Enable Notifications</a><a data-dismiss="alert" aria-label="Close" class="dismiss" href="#">Dismiss</a></p>
+    </div>
+    <!-- /Alert -->
+	<!-- dt-root -->
+    <div class="dt-root">
+        <div class="dt-root__inner">
+            <!-- Header -->
+            <header class="dt-header d-flex justify-content-between">
+            	<!-- logo -->
+                <div class="align-self-center mr-3">
+                    <img alt="" src="img/logo.png">
+                </div>
+                <!-- / logo -->
+                <!-- Nav -->
+                <ul class="nav dt-header__navbar">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="accounts.html">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            ACCOUNTS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-icon account-icon " href="inbox.html">
+                            <i class="fa fa-inbox" aria-hidden="true"></i>
+                            INBOX
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            CONTACTS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analytics.html">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            ANALYTICS
+                        </a>
+                    </li>
+                </ul>
+                 <!-- / Nav -->
+
+                <!--  search bar -->
+                <form class="dt-header__search mb-0">
+                    <div class="input-group">
+                        <input type="text" value="" class="" placeholder="Search keywords: account, contact, or message...">
+                    </div>
+                </form>
+                 <!--  / search bar -->
+
+				 <!--  / secondary -->
+                <div id="navbar-menu">
+                    <ul class="nav  navbar-right dt-header__navbar__secondary">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                New
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        New Message</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                                        New Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Help
+                            </a>
+								<ul class="dropdown-menu" >
+								    <li><a class="dropdown-item" href="#">
+								            <i class="fa fa-comment-o" aria-hidden="true"></i>
+								            Chat With Us
+								        </a>
+								    </li>
+								    <li><a class="dropdown-item" href="#">
+								            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+								            Help Docs
+								        </a>
+								    </li>
+								    <li><a class="dropdown-item" href="#"><i class="fa fa-chain-broken" aria-hidden="true"></i>
+								            Shortcuts
+								        </a>
+								    </li>
+								    <li>
+								        <a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>
+								            Live Training
+								        </a>
+								    </li>
+								    <li>
+								        <a class="dropdown-item" href="#"><i class="fa fa-circle-o" aria-hidden="true"></i>
+								            Status
+								        </a>
+								    </li>
+								</ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Synchroworks Consulting
+                            </a>
+                            <ul class="dropdown-menu" >
+                                <li class="sub-section">
+                                    <p>
+                                        <span class="d-block">
+                                            Active Account
+                                        </span>
+                                        Synchroworks Consulting 1.866.960.9409 ext 203
+                                    </p>
+                                </li>
+                                <li>
+                                	<a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+                                        Admin Settings
+                                    </a>
+                                </li>
+                                <li>
+                                	<a class="dropdown-item" href="#"><i class="fa fa-user-o" aria-hidden="true"></i>
+                                        My Settings
+                                    </a>
+                                </li>
+                                <li>
+                                	<a data-toggle="modal" data-target="#exampleModal" class="dropdown-item" href="#">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                 <!--  / secondary -->
+                <div class="clearfix"></div>
+            </header>
+            <!-- /Header -->
+            <!-- Sidebar -->
+            <div class="dt-sidemenu custom_scroll  fixed-menu">
+				 <nav class="nav  navbar-right dt-sidemenu__navbar">
+				    <ul>
+				        <li class="dropdown">
+				            <a class="dropdown-toggle" href="#" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				                Sort
+				            </a>
+				            <ul class="dropdown-menu" >
+				                <li><a class="dropdown-item" href="#">Action</a></li>
+				                <li><a class="dropdown-item" href="#">Another action</a></li>
+				                <li><a class="dropdown-item" href="#">Something else here</a></li>
+				            </ul>
+				        </li>
+				        <li>
+				            <a href="" class="dt-sidemenu__navbar__list-item">
+				                <h3>PEPSI</h3>
+				                <div class="row">
+				                    <div class="col-4">
+				                        <span>www.pepsi.ca</span>
+				                        <span>info@pepsi.ca</span>
+				                    </div>
+				                    <div class="col-6">
+				                        <address>
+				                            711-2880 Nulla St.Mankato Mississippi 96522(257) 563-7401
+				                        </address>
+				                    </div>
+				                    <div class="col-2">
+				                        <span class="status status--success">
+				                        </span>
+				                    </div>
+				                </div>
+				            </a>
+				        </li>
+				        <li>
+				            <a href="" class="dt-sidemenu__navbar__list-item">
+				                <h3>PIZZA PIZZA USA</h3>
+				                <div class="row">
+				                    <div class="col-4">
+				                        <span>www.pepsi.ca</span>
+				                        <span>info@pepsi.ca</span>
+				                    </div>
+				                    <div class="col-6">
+				                        <address>
+				                            191-103 Integer Rd. Corona New Mexico 08219(404) 960-3807
+				                        </address>
+				                    </div>
+				                    <div class="col-2">
+				                        <span class="status status--danger">
+				                        </span>
+				                    </div>
+				                </div>
+				            </a>
+				        </li>
+				        <li>
+				            <a href="" class="dt-sidemenu__navbar__list-item">
+				                <h3>PERRIER</h3>
+				                <div class="row">
+				                    <div class="col-4">
+				                        <span>www.pepsi.ca</span>
+				                        <span>info@pepsi.ca</span>
+				                    </div>
+				                    <div class="col-6">
+				                        <address>
+				                            P.O. Box 887 2508 Dolor. Av. Muskegon KY 12482 (314) 244-6306
+				                        </address>
+				                    </div>
+				                    <div class="col-2">
+				                        <span class="status status--danger">
+				                        </span>
+				                    </div>
+				                </div>
+				            </a>
+				        </li>
+				        <li>
+				            <a href="" class="dt-sidemenu__navbar__list-item">
+				                <h3>PEPSI</h3>
+				                <div class="row">
+				                    <div class="col-4">
+				                        <span>www.pepsi.ca</span>
+				                        <span>info@pepsi.ca</span>
+				                    </div>
+				                    <div class="col-6">
+				                        <address>
+				                            711-2880 Nulla St. Mankato Mississippi 96522 (257) 563-7401
+				                        </address>
+				                    </div>
+				                    <div class="col-2">
+				                        <span class="status status--success">
+				                        </span>
+				                    </div>
+				                </div>
+				            </a>
+				        </li>
+				        <li class="active">
+				            <a href="" class="dt-sidemenu__navbar__list-item ">
+				                <h3>PIZZA PIZZA USA</h3>
+				                <div class="row">
+				                    <div class="col-4">
+				                        <span>www.pepsi.ca</span>
+				                        <span>info@pepsi.ca</span>
+				                    </div>
+				                    <div class="col-6">
+				                        <address>
+				                            191-103 Integer Rd. Corona New Mexico 08219 (404) 960-3807
+				                        </address>
+				                    </div>
+				                    <div class="col-2">
+				                        <span class="status status--danger">
+				                        </span>
+				                    </div>
+				                </div>
+				            </a>
+				        </li>
+				        <li>
+				            <a href="" class="dt-sidemenu__navbar__list-item ">
+				                <h3>PERRIER</h3>
+				                <div class="row">
+				                    <div class="col-4">
+				                        <span>www.pepsi.ca</span>
+				                        <span>info@pepsi.ca</span>
+				                    </div>
+				                    <div class="col-6">
+				                        <address>
+				                            P.O. Box 887 2508 Dolor. Av. Muskegon KY 12482 (314) 244-6306
+				                        </address>
+				                    </div>
+				                    <div class="col-2">
+				                        <span class="status status--danger">
+				                        </span>
+				                    </div>
+				                </div>
+				            </a>
+				        </li>
+				    </ul>
+				</nav>
+            </div>
+            <!-- / Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <div class="row mb-5">
+                    <div class="col-12 mt-4">
+                        <div class="dropdown date__filter float-left">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                September 10, 2019 - Today September 17, 2019
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- page__section__header-->
+                <div class="page__section__header">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h2>PEPSI</h2>
+                        </div>
+                        <div class="col-sm-8 align-self-end">
+                            <nav class="nav--bar float-right">
+	                            <ul>
+	                                <li><a href="#">www.pepsi.ca </a></li>
+	                                <li><a href="#">info@pepsi. </a></li>
+	                                <li><a href="#">711-2880 Nulla St., Mankato Mississippi 96522</a></li>
+	                                <li><a href="#">(257) 563-7401</a></li>
+	                             </ul>	
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                 <!-- / page__section__header-->
+                 <!-- page__section__header-->
+                <div class="page__section__content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="table__section">
+                                <h4>OPEN CONVERSATIONS</h4>
+                                 <!-- table-responsive -->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Recipient</th>
+                                                <th scope="col">Sent</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Duration</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Adam Pecio</td>
+                                                <td>Sep 17, 2019 at 9:58:05 am</td>
+                                                <td class="text-center"><span class="status status--success"></span></td>
+                                                <td class="text-center">5s</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Adam Pecio</td>
+                                                <td>Sep 17, 2019 at 9:58:05 am</td>
+                                                <td class="text-center"><span class="status status--danger"></span></td>
+                                                <td class="text-center">5s</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Adam Pecio</td>
+                                                <td>Sep 17, 2019 at 9:58:05 am</td>
+                                                <td class="text-center"><span class="status status--success"></span></td>
+                                                <td class="text-center">5s</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-raised btn-primary">View All</button>
+                                    </div>
+                                </div>
+                                 <!-- /table-responsive -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="table__section">
+                                <h4>CLOSED CONVERSATIONS</h4>
+                                 <!-- table-responsive -->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Recipient</th>
+                                                <th scope="col">Sent</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Duration</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Adam Pecio</td>
+                                                <td>Sep 17, 2019 at 9:58:05 am</td>
+                                                <td class="text-center"><span class="status status--success"></span></td>
+                                                <td class="text-center">5s</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Adam Pecio</td>
+                                                <td>Sep 17, 2019 at 9:58:05 am</td>
+                                                <td class="text-center"><span class="status status--danger"></span></td>
+                                                <td class="text-center">5s</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Adam Pecio</td>
+                                                <td>Sep 17, 2019 at 9:58:05 am</td>
+                                                <td class="text-center"><span class="status status--success"></span></td>
+                                                <td class="text-center">5s</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="float-right">
+                                        <button type="button" class="btn btn-raised btn-primary">View All</button>
+                                    </div>
+                                </div>
+                                 <!-- / table-responsive -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                        	<!-- table-responsive -->
+                            <div class="table__section">
+                                <h4>CONVERSATIONS SUMMARY</h4>
+                                 <!-- summary -->
+                                <div class="row summary">
+                                    <div class="col-6 text-center  pr-0">
+                                        <p>Median Resolution (Minutes)</p>
+                                        <span>120</span>
+                                    </div>
+                                    <div class="col-6 text-center  pr-0">
+                                        <p>Number of Conversations</p>
+                                        <span>16</span>
+                                    </div>
+                                </div>
+                                <div class="float-right">
+                                    <button type="button" class="btn btn-raised btn-primary">View All Stats</button>
+                                </div>
+                            </div>
+                            <!-- / table-responsive -->
+                        </div>
+                    </div>
+                </div>
+                 <!-- / page__section__content-->
+            </div>
+            <!-- /Page Content -->
+        </div>
+    </div>
+    <!-- / dt-root -->
+    <!-- Modal -->
+    <div class="custom__model modal fade" id="exampleModal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4 class="mb-3">Are you sure you want to logout?</h4>
+                    <div class="row">
+                        <div class="col-md-12 model-footer">
+                            <button type="button" class="btn btn-primary">OK
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Modal -->
+    <!-- Js for jquery -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.js"></script>
+     <!-- Js for Sidebar Scrollbar -->
+    <script src="js/bootstrap-material-design.js"></script>
+    <!-- Js for Sidebar Scrollbar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.dt-sidemenu .dt-sidemenu__navbar .dt-sidemenu__navbar__list-item').on('click', function(e) {
+            e.preventDefault();
+            var $clickedOpt = $(this);
+            $clickedOpt.closest('.dt-sidemenu__navbar').find('li.active').removeClass('active');
+            $clickedOpt.parent().addClass('active');
+            return false;
+        });
+    });
+
+
+    $(".dismiss").click(function() {
+        $('body').removeAttr('style');
+    });
+ 
+    (function($) {
+        $(window).on("load", function() {
+            $(".custom_scroll").mCustomScrollbar({
+                theme: "minimal"
+            });
+        });
+    })(jQuery);
+    </script>
+</body>
+
+</html>

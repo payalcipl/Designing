@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Dashboard | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Css For Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CMaterial+Icons">
+     <!-- Css For bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+     <!-- Css For login,signup, Fpass -->
+    <link rel="stylesheet" href="css/pages.css">
+     <!-- Css For Font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
+<body class="body-bg">
+    <div class="container d-flex justify-content-center">
+        <div class="pages-form">
+            <div class="row form__outer white-bg">
+                <div class="col-md-6 drak-bg py-5">
+                    <div class="col-12">
+                        <h1 class="mb-2 mb-xl-5">CREATE ACCOUNT</h1>
+                        <div class="logo mb-3">
+                            <img src="img/outer_logo.png" alt="">
+                        </div>
+                        <p class="mb-0">
+                            TapInSolutions (TiS) is a software solutions service for businesses wanting to build customer generation and retention, compile data and engage customers to promote, authenticate and track their products and services. TiS’s customized Near-Field-Communication (NFC) and Text-to-Land (T2L) software solutions will help businesses instantly connect and engage consumers with their brands and services right on the client’s own smartphone, without the client ever having to go to the trouble of configuring a connection.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 py-3  form_inner">
+                    <div class="form-container">
+                        <form name="signup" method="post">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group bmd-form-group">
+                                        <label class="bmd-label-floating">First Name</label>
+                                        <input type="text" class="form-control" name="firstname" id="firstname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group bmd-form-group">
+                                        <label class="bmd-label-floating">Last Name</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group bmd-form-group">
+                                <label class="bmd-label-floating">Enter Email<small> (Your Email Will Be Your Username)</small></label>
+                                <input type="email" class="form-control" name="email" id="email">
+                            </div>
+                            <div class="form-group bmd-form-group">
+                                <label  class="bmd-label-floating">Enter Your Password</label>
+                                <input type="password" class="form-control" name="password" id="password">
+                                <span class="forgot-pass"><a href="#"> <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                    </a></span>
+                            </div>
+                            <div class="form-group bmd-form-group">
+                                <label class="bmd-label-floating">Re-enter Password</label>
+                                <input type="password" class="form-control" name="password_again" id="password_again">
+                                <span class="forgot-pass"><a href="#"><i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                    </a></span>
+                            </div>
+                            <input type="submit" value="Sign Up" class="mt-4 btn btn-raised btn-primary btn-block">
+                            <div class="form-group text-center pt-3 mb-0">
+                                <p class="text-muted">Don't have an account? <a href="login.html">Login</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+          <!-- Js for jquery -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap-material-design.js"></script>
+    <!-- Js for validate -->
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- Js for custom js -->
+    <script src="js/custom.js"></script>
+    <script>
+    $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
+    </script>
+</body>
+</html>

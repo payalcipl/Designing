@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Dashboard | Home</title>
+     <!-- Css For Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CMaterial+Icons">
+     <!-- Css For Mootstrap material -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+     <!-- Css For Full page styling  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Css For Fonts -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Css for Sidebar Scrollbar -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+</head>
+
+<body style="padding-top: 37px;">
+    <!-- Alert -->
+    <div class="alert custom-alert alert-dismissible fade show" role="alert">
+        <p class="mb-0">We need your permission to show notifications. <a href="#" class="mx-3">Enable Notifications</a><a data-dismiss="alert" aria-label="Close" class="dismiss" href="#">Dismiss</a></p>
+        
+    </div>
+    <!-- /Alert -->
+    <div class="dt-root">
+        <div class="dt-root__inner">
+  <!-- Header -->
+            <header class="dt-header d-flex justify-content-between">
+                <!-- logo -->
+                <div class="align-self-center mr-3">
+                    <img alt="" src="img/logo.png">
+                </div>
+                <!-- / logo -->
+                <!-- Nav -->
+                <ul class="nav dt-header__navbar">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="accounts.html">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            ACCOUNTS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-icon account-icon " href="inbox.html">
+                            <i class="fa fa-inbox" aria-hidden="true"></i>
+                            INBOX
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            CONTACTS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analytics.html">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            ANALYTICS
+                        </a>
+                    </li>
+                </ul>
+                 <!-- / Nav -->
+
+                <!--  search bar -->
+                <form class="dt-header__search mb-0">
+                    <div class="input-group">
+                        <input type="text" value="" class="" placeholder="Search keywords: account, contact, or message...">
+                    </div>
+                </form>
+                 <!--  / search bar -->
+
+                 <!--  / secondary -->
+                <div id="navbar-menu">
+                    <ul class="nav  navbar-right dt-header__navbar__secondary">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                New
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        New Message</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                                        New Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Help
+                            </a>
+                                <ul class="dropdown-menu" >
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                            Chat With Us
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                            Help Docs
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                            Shortcuts
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>
+                                            Live Training
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"><i class="fa fa-circle-o" aria-hidden="true"></i>
+                                            Status
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Synchroworks Consulting
+                            </a>
+                            <ul class="dropdown-menu" >
+                                <li class="sub-section">
+                                    <p>
+                                        <span class="d-block">
+                                            Active Account
+                                        </span>
+                                        Synchroworks Consulting 1.866.960.9409 ext 203
+                                    </p>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+                                        Admin Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><i class="fa fa-user-o" aria-hidden="true"></i>
+                                        My Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="modal" data-target="#exampleModal" class="dropdown-item" href="#">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                 <!--  / secondary -->
+                <div class="clearfix"></div>
+            </header>
+            <!-- /Header -->
+            <!-- Sidebar -->
+            <div class="dt-sidemenu custom_scroll  fixed-menu">
+                <ul class="list-unstyled tabs p-3">
+                    <li class="mr-4 float-left"><a class="active" href="#">Open (5)</a></li>
+                    <li><a href="#">close</a></li>
+                    <li class="dropdown float-right">
+                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort
+                        </a>
+                        <ul class="dropdown-menu" >
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <nav class="nav  navbar-right dt-sidemenu__navbar">
+                	<ul>
+	                    <li class="active">
+	                        <a href="" class="dt-sidemenu__navbar__list-item">
+	                            <h3>705-440-2233</h3>
+	                            <div class="row">
+	                                <div class="col-10">
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum, sapien a cursus dignissim, lorem lacus semper dui, id tempor sem arcu at sapien. S</p>
+	                                </div>
+	                                <div class="col-2">
+	                                    <span>
+	                                        11h
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="" class="dt-sidemenu__navbar__list-item">
+	                            <h3>705-440-2233</h3>
+	                            <div class="row">
+	                                <div class="col-10">
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum, sapien a cursus dignissim, lorem lacus semper dui, id tempor sem arcu at sapien. S</p>
+	                                </div>
+	                                <div class="col-2">
+	                                    <span>
+	                                        11h
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="" class="dt-sidemenu__navbar__list-item">
+	                            <h3>705-440-2233</h3>
+	                            <div class="row">
+	                                <div class="col-10">
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum, sapien a cursus dignissim, lorem lacus semper dui, id tempor sem arcu at sapien. S</p>
+	                                </div>
+	                                <div class="col-2">
+	                                    <span>
+	                                        11h
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="" class="dt-sidemenu__navbar__list-item">
+	                            <h3>705-440-2233</h3>
+	                            <div class="row">
+	                                <div class="col-10">
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum, sapien a cursus dignissim, lorem lacus semper dui, id tempor sem arcu at sapien. S</p>
+	                                </div>
+	                                <div class="col-2">
+	                                    <span>
+	                                        11h
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="" class="dt-sidemenu__navbar__list-item">
+	                            <h3>705-440-2233</h3>
+	                            <div class="row">
+	                                <div class="col-10">
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum, sapien a cursus dignissim, lorem lacus semper dui, id tempor sem arcu at sapien. S</p>
+	                                </div>
+	                                <div class="col-2">
+	                                    <span>
+	                                        11h
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a href="" class="dt-sidemenu__navbar__list-item">
+	                            <h3>705-440-2233</h3>
+	                            <div class="row">
+	                                <div class="col-10">
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum, sapien a cursus dignissim, lorem lacus semper dui, id tempor sem arcu at sapien. S</p>
+	                                </div>
+	                                <div class="col-2">
+	                                    <span>
+	                                        11h
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content py-0">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="chat__section text-center mt-5">
+                            <p><span>Chat created on 7/31/2019</span></p>
+                            <p class="mb-0">Robert has joined the chat.</p>
+                            <p>Adrianna has joined the chat.</p>
+                        </div>
+                        <ul class=" row list-unstyled messages d-flex justify-content-center">
+                            <li>
+                                <div class="media align-self-center">
+                                    <img class="mr-3" src="img/thumb.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Robert</h5>
+                                        Hello, thank you for contacting T2L Company. How may I help you?
+                                    </div>
+                                </div>
+                                <span class="float-right py-2">10:30am</span>
+                            </li>
+                            <li>
+                                <div class="media align-self-center">
+                                    <img class="mr-3" src="img/thumb.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Robert</h5>
+                                        Hello, thank you for contacting T2L Company. How may I help you?
+                                    </div>
+                                </div>
+                                <span class="float-right py-2">10:30am</span>
+                            </li>
+                            <li>
+                                <div class="media align-self-center">
+                                    <img class="mr-3" src="img/thumb.png" alt="Generic placeholder image"> <div class="media-body">                              <h5 class="mt-0">Robert</h5>
+                                        Hello, thank you for contacting T2L Company. How may I help you?
+                                    </div>
+                                </div>
+                                <span class="float-right py-2">10:30am</span>
+                            </li>
+                        </ul>
+                        <div class="chart__form">
+                            <div class="form-group">
+                                <textarea id="Notes2" name="Notes" class="" required=""></textarea>
+                                <div class="float-right">
+                                    <button type="button" class="btn btn-raised btn-primary">Close</button>
+                                    <button type="button" class="btn btn-raised btn-primary">Reply & Close</button>
+                                    <button type="button" class="btn btn-raised btn-primary">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 address__bar">
+                        <address>
+                            <ul class="list-unstyled mt-5">
+                                <li>
+                                   <p><strong>Mr. Adam Pecio</strong></p>
+                                </li>
+                                <li>
+                                        <p>
+                                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                            EMAIL
+                                            <span class="d-block">
+                                                adam@synchroworks.net
+                                            </span>
+                                        </p>
+                                </li>
+                                <li>
+                                        <p>
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            PHONE
+                                            <span class="d-block">
+                                                705-440-2233
+                                            </span>
+                                        </p>
+                                </li>
+                            </ul>
+                        </address>
+                        <div class="tags__section">
+                            <ul class="list-unstyled ml-0">
+                                <li>
+                                    <p>
+                                        <span class="d-block">SEGMENTS</span>
+                                        This contact does not belong to any segments.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span class="d-block">SEGMENTS</span>
+                                        This contact does not belong to any segments.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <label>Notes</label>
+                            <textarea id="Notes" name="Notes" class="" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Page Content -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="custom__model modal fade" id="exampleModal"  tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4 class="mb-3">Are you sure you want to logout?</h4>
+                    <div class="row">
+                        <div class="col-md-12 model-footer">
+                            <button type="button" class="btn btn-primary">OK
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- / Modal -->
+      <!-- Js for jquery -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.js"></script>
+     <!-- Js for Sidebar Scrollbar -->
+    <script src="js/bootstrap-material-design.js"></script>
+    <!-- Js for Sidebar Scrollbar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.dt-sidemenu .dt-sidemenu__navbar .dt-sidemenu__navbar__list-item').on('click', function(e) {
+            e.preventDefault();
+            var $clickedOpt = $(this);
+            $clickedOpt.closest('.dt-sidemenu__navbar').find('li.active').removeClass('active');
+            $clickedOpt.parent().addClass('active');
+            return false;
+        });
+    });
+
+
+    $(".dismiss").click(function() {
+        $('body').removeAttr('style');
+    });
+ 
+    (function($) {
+        $(window).on("load", function() {
+            $(".custom_scroll").mCustomScrollbar({
+                theme: "minimal"
+            });
+        });
+    })(jQuery);
+    </script>
+</body>
+
+</html>
